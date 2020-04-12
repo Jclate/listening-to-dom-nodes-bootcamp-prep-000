@@ -13,7 +13,25 @@
 
   <body>
     <main id="main">My ID is "main"!</main>
-    <script id="blurp">My ID = "blurp"!</script> 
+    <script>var div = document.createElement('div')
+            div.innerHTML = "these are words"
+            div.style.background = 'dark-grey'
+           document.body.appendChild(div);
+            var ul = document.createElement('ul')
+
+
+            for (let i = 0; i < 5; i++) {
+              let li = document.createElement('li')
+              li.innerHTML = (i + 3509090989765).toString();
+              ul.appendChild(li)
+            }
+            div.appendChild(ul);
+
+            const element = document.getElementById('div')
+            element.addEventListener('click', function(event) {
+               alert('So many number!')
+             })
+    </script>
     <br />
 
     <div>
